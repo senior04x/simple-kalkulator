@@ -10,7 +10,8 @@ body {
   left: 50%;
 }
 .box {
-  width: 250px;
+  justify-content: center;
+  width: 220px;
   text-align: center;
   background: rgba(18, 119, 178, 0.3);
   padding: 3em;
@@ -36,17 +37,11 @@ body {
   margin-bottom: 60px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.input_case {
-  margin-top: 10px;
-  justify-content: space-between;
-  display: flex;
-  margin-bottom: 20px;
-}
 .input {
   background: transparent;
-  width: 60px;
+  width: 184px;
   padding: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 5px;
   border: none;
   border-left: 1px solid rgba(95, 231, 236, 0.3);
   border-top: 1px solid rgba(95, 231, 236, 0.3);
@@ -69,16 +64,23 @@ body {
   }
 }
 .button_case {
-  margin-bottom: 30px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
 }
+.case-1{
+  width: 135px;
+}
+.case-2{
+  width: 80px;
+  & .btn:last-child{
+    width: 80px;
+  }
+}
 .btn {
+  margin: 1.2px;
     background: transparent;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     padding: 1.5px;
     border: none;
     border-left: 1px solid rgba(95, 231, 236, 0.3);
@@ -103,9 +105,10 @@ body {
     text-shadow: none;
   }
 }
-.btn:last-child{
-    width: 70px;
+.btn:nth-child(10){
+    width: 80px;
 }
+
 
 .text {
     font-weight: 500;

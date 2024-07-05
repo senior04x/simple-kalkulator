@@ -9,34 +9,32 @@
   <body>
     <div class="container">
       <div class="box">
-        <h1 class="title">Simple Calculator</h1>
-        <div class="input_case">
-          <input class="input" id="input1" type="text" />
-          <input class="input" id="input2" type="text" />
-        </div>
+        <h1 class="title">Calculator by Xurshid</h1>
+        <input class="input" type="text" id="display" readonly>
         <div class="button_case">
-          <button class="btn" id="btn1">+</button>
-          <button class="btn" id="btn2">-</button>
-          <button class="btn" id="btn3">*</button>
-          <button class="btn" id="btn4">/</button>
-          <button class="btn" id="btn5">%</button>
-          <button class="btn" id="btn6">**</button>
-          <button class="btn" id="num0">0</button>
-          <button class="btn" id="num1">1</button>
-          <button class="btn" id="num2">2</button>
-          <button class="btn" id="num3">3</button>
-          <button class="btn" id="num4">4</button>
-          <button class="btn" id="num5">5</button>
-          <button class="btn" id="num6">6</button>
-          <button class="btn" id="num7">7</button>
-          <button class="btn" id="num8">8</button>
-          <button class="btn" id="num9">9</button>
-          <button class="btn" onClick="window.location.reload();">
-            Tozalash
-          </button>
+          <div class="case-1">
+            <input class="btn" type="button" value="7" onclick="addToDisplay('7')">
+            <input class="btn" type="button" value="8" onclick="addToDisplay('8')">
+            <input class="btn" type="button" value="9" onclick="addToDisplay('9')">
+            <input class="btn" type="button" value="4" onclick="addToDisplay('4')">
+            <input class="btn" type="button" value="5" onclick="addToDisplay('5')">
+            <input class="btn" type="button" value="6" onclick="addToDisplay('6')">
+            <input class="btn" type="button" value="1" onclick="addToDisplay('1')">
+            <input class="btn" type="button" value="2" onclick="addToDisplay('2')">
+            <input class="btn" type="button" value="3" onclick="addToDisplay('3')">
+            <input class="btn" type="button" value="0" onclick="addToDisplay('0')">
+            <input class="btn" type="button" value="." onclick="addToDisplay('.')">
+          </div>
+          <div class="case-2">
+            <input class="btn" type="button" value="+" onclick="addToDisplay('+')">
+            <input class="btn" type="button" value="C" onclick="clearDisplay()">
+            <input class="btn" type="button" value="-" onclick="addToDisplay('-')">
+            <input class="btn" type="button" value="*" onclick="addToDisplay('*')">
+            <input class="btn" type="button" value="/" onclick="addToDisplay('/')">
+            <input class="btn" type="button" value="." onclick="addToDisplay('.')">
+            <input class="btn" type="button" value="=" onclick="calculate()">
+          </div>
         </div>
-        <p class="text">Result</p>
-        <div id="result"></div>
       </div>
       <div class="drops">
         <div class="drop drop-1"></div>
